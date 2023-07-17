@@ -1,43 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/styles.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/css/navbar.css">
+  <title>Nate Bragg's Website</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Nate Bragg's Logo">
+        </div>
+        <div id="sitenav">
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#featured-projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <section id="hero">
+    <div class="container">
+      <h1>Hello, I'm Nate Bragg</h1>
+      <p>Welcome to my personal website. I am a computer scientist and engineer with expertise in various domains.</p>
+      <a href="#" class="cta-button">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nibh id enim commodo dignissim.
+        Morbi vel nibh rutrum, tincidunt justo in, gravida mi.</p>
+    </div>
+  </section>
+
+  <section id="featured-projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>Placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- More project cards -->
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial-carousel">
+        <div class="testimonial-card">
+          <p>Placeholder text: "Nate Bragg is a highly skilled professional who delivered exceptional results for our
+            project. Highly recommended!"</p>
+          <p class="author">- John Doe, CEO at XYZ Corporation</p>
+        </div>
+        <div class="testimonial-card">
+          <p>Placeholder text: "I had the pleasure of working with Nate Bragg. His expertise and dedication made a
+            significant impact on our success."</p>
+          <p class="author">- Jane Smith, Researcher at ABC Institute</p>
+        </div>
+        <!-- More testimonial cards -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to discuss potential collaborations or if you have any inquiries.</p>
+      <ul>
+        <li>Email: nate@natebragg.com</li>
+        <li>Phone: +1 123-456-7890</li>
+        <li>Follow me on social media:</li>
+      </ul>
+      <div class="social-media-icons">
+        <a href="#" class="icon-link"><img src="icon-twitter.png" alt="Twitter"></a>
+        <a href="#" class="icon-link"><img src="icon-linkedin.png" alt="LinkedIn"></a>
+        <!-- More social media icons -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Footer content -->
+  </footer>
+
+</body>
+
 </html>
