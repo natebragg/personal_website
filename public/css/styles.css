@@ -101,3 +101,15 @@ footer {
   color: #777;
   font-size: 14px;
 }
+
+@media screen and (orientation: portrait) {
+  section h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  section h2 {
+    text-align: left;
+  }
+}
