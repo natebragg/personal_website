@@ -20,14 +20,21 @@ header {
 
 /* Hero Section */
 #hero {
-  display: flex;
   background-color: #f1f1f1;
   padding: 100px 0;
   text-align: center;
-  justify-content: space-between;
+}
+
+#hero .container {
+  display: flex;
+}
+
+.headshot {
+  align-self: center;
 }
 
 .headshot img {
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -104,7 +111,7 @@ footer {
     text-align: center;
   }
 
-  #hero div {
+  #hero .container {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
@@ -115,7 +122,7 @@ footer {
     text-align: left;
   }
 
-  #hero div {
+  #hero .container {
     flex-direction: row;
     align-items: flex-start;
   }
