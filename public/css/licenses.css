@@ -1,0 +1,25 @@
+/* Global Styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#flaticon {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+}
+
+#react {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+#thissite {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+}
+
+h1 {
+    text-align: center;
+}
