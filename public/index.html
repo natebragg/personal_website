@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="%PUBLIC_URL%/css/navbar.css">
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/apple-touch-icon.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>Nate Bragg's Website</title>
+  <title>Nate Bragg</title>
 </head>
 
 <body>
@@ -35,16 +35,46 @@
   <section id="hero">
     <div class="container">
       <h1>Hello, I'm Nate Bragg</h1>
-      <p>Welcome to my personal website. I am a computer scientist and engineer with expertise in various domains.</p>
-      <a href="#" class="cta-button">Learn More</a>
+      <p>
+        Welcome to my personal website. I am a computer scientist and software
+        engineer with expertise in programming languages and embedded systems.
+      </p>
     </div>
+    <div class="headshot">
+      <a href="images/nate.jpg">
+        <img src="images/nate-small.jpg" alt="My Headshot">
+      </a>
+     </div>
   </section>
 
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>Placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nibh id enim commodo dignissim.
-        Morbi vel nibh rutrum, tincidunt justo in, gravida mi.</p>
+      <p>
+        I am a PhD student in the
+        <a href="https://www.cs.tufts.edu/">Department of Computer Science</a>
+        at <a href="https://www.tufts.edu/">Tufts University</a>, working on
+        programming languages with my advisors
+        <a href="https://www.cs.tufts.edu/~jfoster">Jeff Foster</a>.
+      </p>
+      <p>
+        My primary research interests are related to Program Synthesis,
+        applications of Convex Optimization, and Resource Analysis.
+      </p>
+      <p>
+        I'm also generally into weird type systems, event-driven systems,
+        distributed systems, and machine learning.
+      </p>
+      <p>
+        Before returning to graduate school, I spent 12 years in industry
+        working on cool stuff like embedded systems and machine learning for
+        companies including <a href="https://www.bose.com/">Bose</a> and
+        <a href="https://adbsafegate.com/product-center/airfield">ADB Airfield Solutions</a>.
+      </p>
+      <p>
+        Before that, I got my BS in Electrical Engineering at
+        <a href="https://www.rpi.edu/">Rensselaer Polytechnic Institute</a>.
+      </p>
     </div>
   </section>
 
@@ -53,14 +83,42 @@
       <h2>Featured Projects</h2>
       <div class="project-grid">
         <div class="project-card">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <img src="icons/32/code.png" srcset="icons/16/code.png 0.5x, icons/24/code.png 0.75x, icons/64/code.png 2x, icons/128/code.png 4x, icons/256/code.png 8x" alt="Smudge">
+          <h3>Smudge</h3>
+          <p>
+            A domain-specific language for event-driven state machines, along
+            with a compiler and run time system, co-created with my colleague
+            <a href="https://nmichaels.org/">Nathan Michaels</a>.  The compiler
+            is written in Haskell, and generates ANSI C89 output.  The run time
+            system, Smear, is written in C99.
+          </p>
+          <p>
+            <a href="https://github.com/smudgelang/smudge">Check it out</a>
+          </p>
         </div>
         <div class="project-card">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Placeholder text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <img src="icons/32/lambda.png" srcset="icons/16/lambda.png 0.5x, icons/24/lambda.png 0.75x, icons/64/lambda.png 2x, icons/128/lambda.png 4x, icons/256/lambda.png 8x" alt="Ratl">
+          <h3>Ratl</h3>
+          <p>
+            A mini-scheme with a resource-aware type system based on
+            <a href="http://raml.co/">RaML</a>, by Hoffmann et. al.  It is
+            written in Haskell, and is meant as a sandbox to play with
+            resource-aware types, in order to explore their concrete
+            applications.
+          </p>
+          <p>
+            <a href="https://github.com/natebragg/ratl">Check it out</a>
+          </p>
+        </div>
+        <div class="project-card">
+          <img src="icons/32/net.png" srcset="icons/16/net.png 0.5x, icons/24/net.png 0.75x, icons/64/net.png 2x, icons/128/net.png 4x, icons/256/net.png 8x" alt="Bose SoundTouch">
+          <h3>Bose SoundTouch</h3>
+          <p>
+            A networked smart speaker.  My contribution was to improve network
+            and distributed system infrastructure and performance via
+            profiling, optimization, and analysis-driven redesign.  I also
+            contributed to overall application design and implementation.
+          </p>
         </div>
         <!-- More project cards -->
       </div>
@@ -91,20 +149,27 @@
       <h2>Contact Me</h2>
       <p>Feel free to reach out to discuss potential collaborations or if you have any inquiries.</p>
       <ul>
-        <li>Email: nate@natebragg.com</li>
-        <li>Phone: +1 123-456-7890</li>
-        <li>Follow me on social media:</li>
+        <li>Office: C/O Dept. of Computer Science, 4th floor of the JCC, 177 College Ave, Medford, MA, 02155</li>
+        <li>Email: nate at cs dot tufts dot edu<!--, nate@natebragg.com--></li>
+        <!-- <li>Phone: +1 123-456-7890</li> -->
+        <!-- <li>Follow me on social media:</li> -->
       </ul>
+      <!--
       <div class="social-media-icons">
         <a href="#" class="icon-link"><img src="icon-twitter.png" alt="Twitter"></a>
         <a href="#" class="icon-link"><img src="icon-linkedin.png" alt="LinkedIn"></a>
-        <!-- More social media icons -->
+        <!-- More social media icons --
       </div>
+      -->
     </div>
   </section>
 
   <footer>
-    <!-- Footer content -->
+    <p>
+      Copyright Nate Bragg 2023
+      <br />
+      For detailes on licenses, <a href="licenses.html">see here</a>
+    </p>
   </footer>
 
 </body>
