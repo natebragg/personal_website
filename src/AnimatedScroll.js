@@ -14,10 +14,10 @@ const AnimatedScroll = () => {
   return (
     <ul className="menu">
       <li><a className="sitenavitem" onClick={() => scrollToSection('about')}>About</a></li>
+      <li><a className="sitenavitem" onClick={() => scrollToSection('publications')}>Publications</a></li>
       <li><a className="sitenavitem" onClick={() => scrollToSection('featured-projects')}>Projects</a></li>
       <li><a className="sitenavitem" onClick={() => scrollToSection('testimonials')}>Testimonials</a></li>
       <li><a className="sitenavitem" onClick={() => scrollToSection('contact')}>Contact</a></li>
-      <li><a className="sitenavitem" href="history.html">History</a></li>
     </ul>
   );
 };
